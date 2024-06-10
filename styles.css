@@ -1,0 +1,139 @@
+/*Home page*/
+
+* {
+  margin: 0;
+}
+body {
+  height: 800px;
+  background-color: lightgoldenrodyellow;
+}
+
+header {
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  background-color: blue;
+  color: lightgoldenrodyellow;
+  height: 40px;
+}
+
+.question-card {
+  position: relative;
+  margin: 30px;
+  padding: 10px;
+  border: 2px solid blue;
+  text-align: center;
+}
+
+.bookmark {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.question {
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  margin: 20px;
+  padding: 5px 10px;
+  background-color: blue;
+  color: lightgoldenrodyellow;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.tag-categoris {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.list {
+  padding: 2px 4px;
+  list-style: none;
+  background-color: lightgray;
+  border: 2px solid darkgrey;
+  border-radius: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.active .icon {
+  filter: none;
+  background-color: lightgoldenrodyellow;
+  border-radius: 5px;
+}
+
+/*PROFILE PAGE*/
+
+.user {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+h3 {
+  padding: 20px 0;
+}
+
+.profile-content {
+  padding: 40px 30px;
+}
+
+.profile-stats {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.counter,
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+span {
+}
+
+h2 {
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.dark-mode-toggle {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
