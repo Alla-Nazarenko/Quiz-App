@@ -1,0 +1,22 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  font-size: 15px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.active .icon {
+  filter: none;
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}

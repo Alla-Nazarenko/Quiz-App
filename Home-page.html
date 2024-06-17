@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
   </head>
-  <body>
-    <header id="home">
+  <body id="home" data-js="body">
+    <header>
       <h1>Quiz App</h1>
     </header>
     <main>
@@ -19,6 +20,7 @@
             <button type="button" role="button" class="answer-button">
               Show The Answer
             </button>
+            <p class="answer hiden">flexbox</p>
             <ul class="tag-categoris">
               <li class="list">#html</li>
               <li class="list">#flexbox</li>
@@ -33,6 +35,7 @@
             <button type="button" role="button" class="answer-button">
               Show The Answer
             </button>
+            <p class="answer hiden">html</p>
             <ul class="tag-categoris">
               <li class="list">#html</li>
               <li class="list">#flexbox</li>
@@ -43,8 +46,8 @@
       </ul>
     </main>
     <footer>
-      <nav class="nav-menu">
-        <ul role="list">
+      <nav>
+        <ul role="list" class="nav-menu">
           <li>
             <a href="Home-page.html" class="active">
               <img src="HP (50x50).png" alt="Home" class="icon"

@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Page</title>
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
   </head>
-  <body>
+  <body data-js="body">
     <header>
       <h1>Quiz App</h1>
     </header>
     <main>
       <ul>
         <li>
-          <article id="profil" class="user">
-           <img src="Avatar (50x50).png" alt="profil" class="icon" />
+          <article class="user">
+           <img src="Avatar (50x50).png" alt="profil" class="icon" width="50"
+           height="50"/>
            <h2>Alla Nazarenko</h2>
           </article>
         </li>
@@ -25,14 +26,14 @@
             <p>I am ...</p>
           </article>
         </li>
-        <li>
-          <article class="profile-stats">
+        <li class="profile-stats">
+          <article>
             <p class="counter">
               <img
                 src="Question.png"
                 alt="question"
-                width="30"
-                height="30"
+                width="25"
+                height="25"
                 class="icon"
               />
               <span>12</span>
@@ -42,8 +43,8 @@
             <img
               src="BM full (50x50).png"
               alt="bookmark"
-              width="30"
-              height="30"
+              width="25"
+              height="25"
               class="icon"
             />
             <span>4</span>
@@ -52,19 +53,35 @@
         <li>
           <article class="profile-settings">
             <h2>Settings</h2>
-            <p class="dark-mode-toggle">
-              <span>Dark Mode</span>
-              <input type="checkbox" id="dark-mode" />
-              <label for="dark-mode" class="toggle"></label>
-            </p>
+            <ul class="switch">
+              <li class="switch__item"> 
+                <span>Dark mode input</span>
+                <input type="checkbox" data-js="input-darkMode"/>
+                <span class="slider"></span>
+              </li>
+              <li class="switch__item"> 
+                <span class="buttons">Log into a console</span>
+                <button type="button" class="button button--toggle" data-js="logging-button">Log</button>
+              </li>
+              <li class="switch__item">
+                <span class="buttons">Add dark mode</span>
+                <button type="button" class="button button--toggle" data-js="adding-button">Add</button>
+              </li>
+              <li class="switch__item">
+                <span class="buttons">Remove dark mode</span>
+                <button type="button" class="button button--toggle" data-js="removing-button">Remove</button>
+              </li>
+              <li class="switch__item">
+                <span class="buttons">Toggle dark mode</span>
+                <button type="button" class="button button--toggle" data-js="toggling-button">Toggle</button>
+              </li>
+            </ul>
           </article>
         </li>
       </ul>
     </main>
-    <footer>
-      <div class="footer-container"></div>
-      <nav class="nav-menu">
-        <ul role="list">
+    <footer> 
+     <ul role="list" class="nav-menu">
           <li>
             <a href="Home-page.html">
               <img src="HP (50x50).png" alt="Home" class="icon"
@@ -81,7 +98,7 @@
             /></a>
           </li>
         </ul>
-      </nav>
+      </ul>
     </footer>
   </body>
 </html>
